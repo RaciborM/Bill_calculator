@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BillCalc</title>
+
+		<!-- fontawesome -->
+		<script
+			src="https://kit.fontawesome.com/39daee9401.js"
+			crossorigin="anonymous"></script>
+
+		<!-- googlefonts-Montserrat-Dancing Script -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet" />
+
+		<!-- mystyle -->
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<h1>Billsplitter</h1>
+				<p>podziel się rachunkami ze znajomymi :D</p>
+			</div>
+			<div class="info">
+				<label for="money-amount" class="how-much"
+					>Kwota do zapłaty (zł):</label
+				>
+				<input type="number" class="money-amount" value="100" />
+
+				<label for="people-amount" class="how-many">Ilość osób:</label>
+				<input type="number" class="people-amount" value="10" />
+
+				<label for="tip-amount" class="tip">Napiwek (%):</label>
+				<!-- <input type="number" class="tip-amount" placeholder="10%" /> -->
+				<select class="tip-amount">
+					<option value="0" disabled selected>- wybierz napiwek -</option>
+					<option value="0.0">0</option>
+					<option value="0.05">5%</option>
+					<option value="0.1">10%</option>
+					<option value="0.15">15%</option>
+					<option value="0.2">20%</option>
+				</select>
+
+				<button class="btn">Oblicz</button>
+				<p class="error">Wprowadź poprawne wartości!</p>
+				<p class="money-info">
+					Powinniście się zlożyć po <span class="cost"> </span> zł :D
+				</p>
+			</div>
+		</div>
+
+		<script src="./main.js"></script>
+	</body>
+</html>
